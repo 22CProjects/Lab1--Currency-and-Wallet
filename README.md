@@ -11,7 +11,7 @@ To create a local copy of the repository:
 
 3. you want to copy the repo into you VS project folder, so type:
     
-'cd Documents\"Visual Studio 2015"\Projects'       
+    'cd Documents\"Visual Studio 2015"\Projects'       
 
 *note: your file path may be different but its probably similar
 
