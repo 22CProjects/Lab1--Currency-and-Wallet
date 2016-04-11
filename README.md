@@ -22,3 +22,30 @@ To create a local copy of the repository:
 
 ...
 will add futher instructions
+
+
+
+
+
+##TODO:
+- [ ]Currency baseclass
+   - [x]operator+
+   - [x]operator-
+   - [x]operator<<
+   - [ ]operator>>
+- [ ]Derived Currency classes
+- [ ]Wallet Class
+   - [ ]numCurrencies (number of existing currency types)
+   - [ ]inWallet (check if currency is in wallet)
+   - [ ]add (add money by currency)
+   - [ ]subtract (subtract money by currency)
+   - [ ]remove (remove money by currency)
+   - [ ]emptyWallet (empty the wallet)
+   - [ ]isEmplty (check if wallet is empty)
+- [ ] main
+   - [ ]add/sub currencies using base-clase array
+   - [ ]random num generator to add/remove amounts between 0-99 for wholes and fractions
+   - [ ]enum to generate type of currency 
+   - [ ]output contents of wallet
+   - [ ]empty wallet
+   - [ ]print process of emptying wallet
