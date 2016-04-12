@@ -31,15 +31,19 @@ Now, the code should be able to open up the code in VS
     'cd Documents\"Visual Studio 2015"\Projects\Lab1(or whatever you called it )' 
 
 3. make sure your project is up to date:
+
     'git status'   <--will show you what is not up to date
 
 4. if you added things that you didnt yet commit run:
+
     'git stash' 
 
 5.  'git pull'
+
      (you will probably be asked to enter your passphrase for your ssh key)
 
 6.to view you uncommitted changes as well:
+
    'git pop stash'
 
 
@@ -58,8 +62,11 @@ Now, the code should be able to open up the code in VS
 4.if it is not up to date, follow the above instructions "to add my changes"
 
 5. type:
+
     'git add .'
+    
     'git commit -m "some message (specify what you changd)"  '
+    
     'git push'
 
 thats basically it
