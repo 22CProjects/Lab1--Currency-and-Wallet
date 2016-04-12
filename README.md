@@ -1,6 +1,6 @@
-# Lab1--Currency-and-Wallet
+## Lab1--Currency-and-Wallet
 
-To create a local copy of the repository:
+#To create a local copy of the repository:
 
 
 1. create an ssh key (google this) 
@@ -20,12 +20,49 @@ To create a local copy of the repository:
 
     'git clone git@github.com/22CProjects/Lab1--Currency-and-Wallet.git'
 
-...
-will add futher instructions
+Now, the code should be able to open up the code in VS
+
+#To add my changes:
+
+1.open up git bash
+
+2. cd into the project 
+
+    'cd Documents\"Visual Studio 2015"\Projects\Lab1(or whatever you called it )' 
+
+3. make sure your project is up to date:
+    'git status'   <--will show you what is not up to date
+
+4. if you added things that you didnt yet commit run:
+    'git stash' 
+
+5.  'git pull'
+     (you will probably be asked to enter your passphrase for your ssh key)
+
+6.to view you uncommitted changes as well:
+   'git pop stash'
 
 
 
+#To add your changes to the code up to the remote repo (here) so that I can update my version on the code:
 
+1.open up git bash
+
+2. cd into the project 
+
+    'cd Documents\"Visual Studio 2015"\Projects\Lab1(or whatever you called it )' 
+
+3. make sure your project is up to date:
+    'git status'   <--will show you what is not up to date
+
+4.if it is not up to date, follow the above instructions "to add my changes"
+
+5. type:
+    'git add .'
+    'git commit -m "some message (specify what you changd)"  '
+    'git push'
+
+thats basically it
 
 ##TODO:
 - [ ]Currency baseclass
