@@ -1,3 +1,6 @@
+#ifndef CURRENCY
+#define CURRENCY
+
 #include <iostream>
 #include<string>
 class Currency
@@ -16,7 +19,8 @@ public:
 	Currency& operator+(Currency&);
 	Currency& operator-(Currency&);
 	friend std::ostream& operator<<(std::ostream&, const Currency&);
-	friend std::ostream& operator>>(std::ostream&, const Currency&);//not sure what the use of this operator is
+	friend std::istream& operator>>(std::istream&, Currency&);//not sure what the use of this operator is
 
 };
 
+#endif
