@@ -1,6 +1,6 @@
 #include "Wallet.h"
 #include "Currency.h"
-#include "Dollar.h"
+#include  "Dollar.h"
 #include "Euro.h"
 
 #include <iostream>
