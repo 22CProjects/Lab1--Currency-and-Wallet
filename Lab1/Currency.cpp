@@ -4,7 +4,15 @@
 
 using namespace std;
 
-Currency::Currency(string n, string fn, int w, int f) : name(n), fractionName(fn), whole(w), fraction(f)
+Currency::Currency() : name("General Currency"), fractionName("General Fraction"), whole(0), fraction(0), next(0)
+{
+}
+
+Currency::Currency(string n, string fn) : name(n), fractionName(fn), whole(0), fraction(0), next(0)
+{
+}
+
+Currency::Currency(string n, string fn, int w, int f) : name(n), fractionName(fn), whole(w), fraction(f), next(0)
 {
 }
 
@@ -12,12 +20,22 @@ Currency::~Currency()
 {
 }
 
-string Currency::getName()
+void Currency::set_nextCurrency(Currency* ncur)
+{
+	next = ncur;
+}
+
+Currency* Currency::get_nextCurrency() const
+{
+	return next;
+}
+
+string Currency::getName() const
 {
 	return name;
 }
 
-string Currency::getFracName()
+string Currency::getFracName() const
 {
 	return fractionName;
 }
@@ -27,14 +45,11 @@ Currency& Currency::operator+(Currency& cur)
 	if (this->getName() == cur.getName())
 	{
 		this->whole += cur.whole;
-		if (this->fraction + cur.fraction > 99)
+		this->fraction += cur.fraction;
+		if (this->fraction >= 100)
 		{
-			this->fraction = 100 - (this->fraction + cur.fraction);
-			this->whole++;
-		}
-		else 
-		{
-			this->fraction += cur.fraction;
+			this->whole += this->fraction / 100;
+			this->fraction = this->fraction % 100;
 		}
 	}
 	else
@@ -48,15 +63,13 @@ Currency& Currency::operator-(Currency& cur)
 {
 	if (this->getName() == cur.getName())
 	{
-		if (cur.fraction > this->fraction)
+		if (this->fraction - cur.fraction < 0)
 		{
 			this->whole--;
-			this->fraction + 100;
-			this->fraction -= cur.fraction;
+			this->fraction += (100 + this->fraction) - cur.fraction;
 		}
-		this->whole -= cur.whole;
-		if (this->whole < 0)
-		{
+		if (this->whole < 0 && this->fraction < 0)//since you cannot have negative a negative amount of currency,
+		{										  //if the subtraction leads to a negative amount, set to zero
 			this->whole = 0;
 			this->fraction = 0;
 			cout << "there is no currency of this type left";

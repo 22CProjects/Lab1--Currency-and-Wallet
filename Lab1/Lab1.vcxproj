@@ -111,11 +111,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Currency.cpp" />
+    <ClCompile Include="Dollar.cpp" />
+    <ClCompile Include="Euro.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Wallet.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Currency.h" />
+    <ClInclude Include="Dollar.h" />
+    <ClInclude Include="Euro.h" />
     <ClInclude Include="Wallet.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

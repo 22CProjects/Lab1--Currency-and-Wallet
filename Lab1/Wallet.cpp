@@ -2,47 +2,65 @@
 
 using namespace std;
 
-Wallet::Wallet() 
+Wallet::Wallet() : numCurrencies(0)
 {
 }
 
 
 Wallet::~Wallet()
 {
+	Currency* temp = top;
+	if (numCurrencies != 0)
+	{
+		while (top->get_nextCurrency() != nullptr)
+		{
+			temp = top;
+			//cout << "Removing " << temp->getName() << " from wallet" << endl;
+			top = top->get_nextCurrency();
+			delete temp;
+		}
+
+	}
+	numCurrencies = 0;
 }
 
 int Wallet::getNumCurrencies()
 {
-	return Currencies.size();
+	return numCurrencies;
 }
 
 int Wallet::inWallet(string type)
 {
-	for (int i = 0; i < Currencies.size(); i++)
+	Currency* temp = top;
+	for (int i = 0; i < numCurrencies; i++)
 	{
-		if (type == Currencies[i].getName()) return i;
+		if (type == temp->getName()) return i;
+		temp = temp->get_nextCurrency();
 	}
 	return -1;
 }
 
 bool Wallet::isEmpty()
 {
-	if (Currencies.empty()) return true;
+	if (numCurrencies == 0) return true;
 	return false;
 }
 
-void Wallet::add(Currency cur)
+void Wallet::add(Currency* cur)
 {
-	int pos = inWallet(cur.getName());
+	int pos = inWallet(cur->getName());
 	if (pos != -1)
 	{
-		Currencies[pos] + cur;
+		//do
 	}
 	else
 	{
-		if (Currencies.size() < 5)
+		if (numCurrencies < MAX)
 		{
-			Currencies.push_back(cur);
+			cur->set_nextCurrency(top);
+			top = cur;
+			numCurrencies++;
+			cout << cur->getName() << " added, numCurrencies is " <<numCurrencies<<endl;
 		}
 		else
 		{
@@ -51,21 +69,31 @@ void Wallet::add(Currency cur)
 	}
 }
 
-void Wallet::subtract(Currency cur)
+void Wallet::subtract(Currency* cur)
 {
-	int pos = inWallet(cur.getName());
+	int pos = inWallet(cur->getName());
 	if (pos != -1)
 	{
-		Currencies[pos] - cur;
+		//do 
 	}
 	else
 	{
-		cout << "The wallet does not contain" << cur.getName();
+		cout << "The wallet does not contain" << cur->getName();
 	}
 }
 
 
 void Wallet::emptyWallet()
 {
-	Currencies.clear();
+	Currency* temp = top;
+	while (top!= nullptr)
+	{
+		temp = top;
+		cout << "Removing " << temp->getName() << " from wallet" << endl;
+		top = top->get_nextCurrency();
+		delete temp;
+	}
+
+	cout << "Wallet is now Empty"<<endl;
+	numCurrencies = 0;
 }
