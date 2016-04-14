@@ -24,12 +24,6 @@
     <ClCompile Include="Wallet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Dollar.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Euro.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Currency.h">
@@ -38,10 +32,19 @@
     <ClInclude Include="Wallet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Dollar.h">
+    <ClInclude Include="Pound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ruble.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Euro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dollar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CanadianDollar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

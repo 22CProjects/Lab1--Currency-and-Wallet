@@ -67,7 +67,6 @@ Currency& Currency::operator-(Currency& cur)
 		{										  //if the subtraction leads to a negative amount, set to zero
 			this->whole = 0;
 			this->fraction = 0;
-			cout << "there is no currency of this type left";
 		}
 
 		else

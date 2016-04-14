@@ -115,12 +115,12 @@
     <ClCompile Include="Wallet.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\Downloads\CanadianDollar.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Dollar.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Euro.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Pound.h" />
-    <ClInclude Include="..\..\..\..\..\Downloads\Ruble.h" />
+    <ClInclude Include="CanadianDollar.h" />
     <ClInclude Include="Currency.h" />
+    <ClInclude Include="Dollar.h" />
+    <ClInclude Include="Euro.h" />
+    <ClInclude Include="Pound.h" />
+    <ClInclude Include="Ruble.h" />
     <ClInclude Include="Wallet.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

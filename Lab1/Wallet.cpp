@@ -9,7 +9,6 @@ Wallet::Wallet() : numCurrencies(0)
 
 Wallet::~Wallet()
 {
-	cout << "Wallet dc";
 }
 
 int Wallet::getNumCurrencies()
@@ -17,13 +16,15 @@ int Wallet::getNumCurrencies()
 	return numCurrencies;
 }
 
-int Wallet::inWallet(string type)
+int Wallet::inWallet(Currency* type)
 {
+	int pos = 1;
 	Currency* temp = top;
-	for (int i = 0; i < numCurrencies; i++)
+	while(temp != 0)
 	{
-		if (type == temp->getName()) return i;
+		if (type->getName() == temp->getName()) return pos;
 		temp = temp->get_nextCurrency();
+		pos++;
 	}
 	return -1;
 }
@@ -37,16 +38,16 @@ bool Wallet::isEmpty()
 void Wallet::add(Currency* cur)
 {
 	Currency* temp = top;
-	int pos = inWallet(cur->getName());
+	int pos = inWallet(cur);
 	if (pos != -1)
 	{
-		for (int i = 0; i != pos; i++)
+		for (int i = 1; i != pos; i++)
 		{
 			temp = temp->get_nextCurrency();
 		}
 		*temp + *cur;
-		cout << *temp<<endl;
 	}
+
 	else
 	{
 		if (numCurrencies < MAX)
@@ -58,7 +59,7 @@ void Wallet::add(Currency* cur)
 		}
 		else
 		{
-			cout << "The wallet already contains 5 currencies";
+			cout << cur->getName()<<" The wallet already contains 5 currencies"<<endl;
 		}
 	}
 	
@@ -67,19 +68,18 @@ void Wallet::add(Currency* cur)
 void Wallet::subtract(Currency* cur)
 {
 	Currency* temp = top;
-	int pos = inWallet(cur->getName());
+	int pos = inWallet(cur);
 	if (pos != -1)
 	{
-		for (int i = 0; i != pos; i++)
+		for (int i = 1; i != pos; i++)
 		{
 			temp = temp->get_nextCurrency();
 		}
 		*temp - *cur;
-		cout << *temp << endl;
 	}
 	else
 	{
-		cout << "The wallet does not contain" << cur->getName();
+		cout << "**The wallet does not contain" << cur->getName()<<"**"<<endl;
 	}
 }
 
@@ -91,9 +91,10 @@ void Wallet::emptyWallet()
 	while (top!= nullptr)
 	{
 		temp = top;
-		cout << "Removing " << temp->getName() << " from wallet" << endl;
-		top = top->get_nextCurrency();
 		numCurrencies--;
+		cout << "--Removing " << temp->getName() << " from wallet--" << endl 
+			<<"The wallet now contains "<<numCurrencies<<" Currencies"<<endl;
+		top = top->get_nextCurrency();
 	}
 
 	cout << "Wallet is now Empty"<<endl;

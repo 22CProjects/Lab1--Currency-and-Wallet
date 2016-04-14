@@ -1,4 +1,4 @@
-﻿Build started 4/13/2016 11:20:40 PM.
+﻿Build started 4/14/2016 1:39:28 AM.
      1>Project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Lab1.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "14.0".
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Lab1.vcxproj" (entry point):
@@ -21,7 +21,7 @@
      1>Target "_PrepareForReferenceResolution" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Lab1.vcxproj" (target "ResolveReferences" depends on it):
        Task "Message" skipped, due to false condition; ('$(_REFERENCE_DEBUG)'=='true') was evaluated as (''=='true').
      1>Done building target "_PrepareForReferenceResolution" in project "Lab1.vcxproj".
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Currency.cpp;Dollar.cpp;Euro.cpp;main.cpp;Wallet.cpp'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Currency.cpp;main.cpp;Wallet.cpp'!='' and 'false'=='true' and '' != 'false').
      1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Lab1.vcxproj" (target "ResolveReferences" depends on it):
      1>Done building target "BeforeResolveReferences" in project "Lab1.vcxproj".
      1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Lab1.vcxproj" (target "ResolveReferences" depends on it):
@@ -104,7 +104,7 @@
        Done executing task "MakeDir".
      1>Done building target "PrepareForBuild" in project "Lab1.vcxproj".
        Target "_PrepareForReferenceResolution" skipped. Previously built successfully.
-       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Currency.cpp;Dollar.cpp;Euro.cpp;main.cpp;Wallet.cpp'!='' and 'false'=='true' and '' != 'false').
+       Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('Currency.cpp;main.cpp;Wallet.cpp'!='' and 'false'=='true' and '' != 'false').
      1>Target "GetInstalledSDKLocations" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Lab1.vcxproj" (target "ResolveSDKReferences" depends on it):
        Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '') was evaluated as ('' != '').
        Task "GetInstalledSDKLocations" skipped, due to false condition; ('@(SDKReference)' != '' and '$(SupportWindows81SDKs)' == 'true' and '$(TargetPlatformIdentifierWindows81)' != '' and '$(TargetPlatformVersionWindows81)' != '') was evaluated as ('' != '' and '' == 'true' and '' != '' and '' != '').
@@ -204,8 +204,6 @@
      1>Done building target "ComputeReferenceCLInput" in project "Lab1.vcxproj".
      1>Target "WarnCompileDuplicatedFilename" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Lab1.vcxproj" (target "_ClCompile" depends on it):
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'Currency.cpp' != 'Currency.cpp' and 'Debug\' == 'Debug\').
-       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'Dollar.cpp' != 'Dollar.cpp' and 'Debug\' == 'Debug\').
-       Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'Euro.cpp' != 'Euro.cpp' and 'Debug\' == 'Debug\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'main.cpp' != 'main.cpp' and 'Debug\' == 'Debug\').
        Task "VCMessage" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(Filename)%(Extension)' != '@(ClCompile->'%(Filename)%(Extension)')' and '%(ObjectFileName)' == '@(ClCompile->Metadata(ObjectFileName)->Distinct())') was evaluated as ('' != 'true' and 'Wallet.cpp' != 'Wallet.cpp' and 'Debug\' == 'Debug\').
      1>Done building target "WarnCompileDuplicatedFilename" in project "Lab1.vcxproj".
@@ -231,7 +229,7 @@
      1>Target "SelectClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Lab1.vcxproj" (target "ClCompile" depends on it):
      1>Done building target "SelectClCompile" in project "Lab1.vcxproj".
        Target "GenerateTargetFrameworkMonikerAttribute" skipped, due to false condition; ('$(GenerateTargetFrameworkAttribute)' == 'true') was evaluated as ('false' == 'true').
-       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Currency.cpp;Dollar.cpp;Euro.cpp;main.cpp;Wallet.cpp' != '' and 'false' == 'True').
+       Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Currency.cpp;main.cpp;Wallet.cpp' != '' and 'false' == 'True').
      1>Target "ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppCommon.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Lab1.vcxproj" (target "_ClCompile" depends on it):
        Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('EditAndContinue' != '' and 'EditAndContinue' != 'None' and 'EditAndContinue' != 'OldStyle' and 'Debug\vc140.pdb' != '' and !Exists(Debug\vc140.pdb)).
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '') was evaluated as ('NotUsing' == 'Create' and ''!='true' and '' == '').
@@ -239,22 +237,21 @@
        Task "CL"
          Read Tracking Logs:
          	Debug\Lab1.tlog\CL.read.1.tlog
-         Outputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\CURRENCY.CPP|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DOLLAR.CPP|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\EURO.CPP|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\MAIN.CPP|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\WALLET.CPP:
+         Outputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\CURRENCY.CPP|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\MAIN.CPP|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\WALLET.CPP:
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\CURRENCY.OBJ
-         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\DOLLAR.OBJ
-         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\EURO.OBJ
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\WALLET.OBJ
-         main.cpp will be compiled as C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\main.cpp was modified at 4/13/2016 11:20:39 PM.
+         main.cpp will be compiled as C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\main.cpp was modified at 4/14/2016 1:39:28 AM.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1388
+           VS_UNICODE_OUTPUT=1692
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Debug\Lab1.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\MAIN.CPP" /b MSBuildConsole_CancelEventf3dd1b9a9bb94866bfe0ff084ea739bf  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Debug\Lab1.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\MAIN.CPP" /b MSBuildConsole_CancelEventcfd276e80d0b4748910f9d12cd8045bd  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
+     1>c:\users\anya\documents\visual studio 2015\projects\lab1\lab1\main.cpp(17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
        Done executing task "CL".
      1>Done building target "ClCompile" in project "Lab1.vcxproj".
-       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Currency.cpp;Dollar.cpp;Euro.cpp;main.cpp;Wallet.cpp' != '' and 'false' == 'True').
+       Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Currency.cpp;main.cpp;Wallet.cpp' != '' and 'false' == 'True').
      1>Target "AfterClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Lab1.vcxproj" (target "_ClCompile" depends on it):
      1>Done building target "AfterClCompile" in project "Lab1.vcxproj".
      1>Target "_ClCompile" in file "C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Lab1.vcxproj" (target "_BuildCompileAction" depends on it):
@@ -369,11 +366,11 @@
          	Debug\Lab1.tlog\link.write.1.tlog
          Read Tracking Logs:
          	Debug\Lab1.tlog\link.read.1.tlog
-         Outputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\CURRENCY.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\DOLLAR.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\EURO.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\WALLET.OBJ:
+         Outputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\CURRENCY.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\WALLET.OBJ:
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\DEBUG\LAB1.ILK
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\DEBUG\LAB1.EXE
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\DEBUG\LAB1.PDB
-         Inputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\CURRENCY.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\DOLLAR.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\EURO.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\WALLET.OBJ:
+         Inputs for C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\CURRENCY.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\WALLET.OBJ:
          	C:\WINDOWS\GLOBALIZATION\SORTING\SORTDEFAULT.NLS
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\KERNEL32.LIB
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\USER32.LIB
@@ -388,8 +385,6 @@
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\ODBC32.LIB
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\LIB\WINV6.3\UM\X86\ODBCCP32.LIB
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\CURRENCY.OBJ
-         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\DOLLAR.OBJ
-         	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\EURO.OBJ
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\WALLET.OBJ
          	C:\WINDOWS\SYSTEM32\TZRES.DLL
@@ -398,21 +393,14 @@
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\LIB\OLDNAMES.LIB
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\LIB\VCRUNTIMED.LIB
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.10240.0\UCRT\X86\UCRTD.LIB
-         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\BIN\LINK.EXE
-         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\BIN\X86\RC.EXE
-         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\BIN\CVTRES.EXE
-         Source compilation required: input C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ is newer than output C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\DEBUG\LAB1.EXE.
+         Source compilation required: input C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ is newer than output C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\DEBUG\LAB1.PDB.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1480
+           VS_UNICODE_OUTPUT=1672
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.lib" /MACHINE:X86 Debug\Currency.obj
-         Debug\Dollar.obj
-         Debug\Euro.obj
          Debug\main.obj
          Debug\Wallet.obj
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Debug\Lab1.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\CURRENCY.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\DOLLAR.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\EURO.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\WALLET.OBJ" /b MSBuildConsole_CancelEvent9e5e51a45a884952bfe937e71460fad2  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.lib" /MACHINE:X86 Debug\Currency.obj
-         Debug\Dollar.obj
-         Debug\Euro.obj
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Debug\Lab1.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\CURRENCY.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\WALLET.OBJ" /b MSBuildConsole_CancelEvent6c12c41f81b64d168ea5f4dc8719a753  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.lib" /MACHINE:X86 Debug\Currency.obj
          Debug\main.obj
          Debug\Wallet.obj
        Done executing task "Link".
@@ -550,4 +538,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.19
+Time Elapsed 00:00:01.24
