@@ -9,19 +9,7 @@ Wallet::Wallet() : numCurrencies(0)
 
 Wallet::~Wallet()
 {
-	Currency* temp = top;
-	if (numCurrencies != 0)
-	{
-		while (top->get_nextCurrency() != nullptr)
-		{
-			temp = top;
-			//cout << "Removing " << temp->getName() << " from wallet" << endl;
-			top = top->get_nextCurrency();
-			delete temp;
-		}
-
-	}
-	numCurrencies = 0;
+	cout << "Wallet dc";
 }
 
 int Wallet::getNumCurrencies()
@@ -67,6 +55,7 @@ void Wallet::add(Currency* cur)
 			cout << "The wallet already contains 5 currencies";
 		}
 	}
+	
 }
 
 void Wallet::subtract(Currency* cur)
@@ -86,14 +75,15 @@ void Wallet::subtract(Currency* cur)
 void Wallet::emptyWallet()
 {
 	Currency* temp = top;
+
 	while (top!= nullptr)
 	{
 		temp = top;
 		cout << "Removing " << temp->getName() << " from wallet" << endl;
 		top = top->get_nextCurrency();
-		delete temp;
+		numCurrencies--;
 	}
 
 	cout << "Wallet is now Empty"<<endl;
-	numCurrencies = 0;
+		
 }
