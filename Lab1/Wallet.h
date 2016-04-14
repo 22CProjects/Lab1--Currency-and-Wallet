@@ -18,7 +18,7 @@ private:
 public:
 	Wallet();
 	~Wallet();
-	int getNumCurrencies();       //return # of curreny types in wallet
+	int getNumCurrencies();       //return # of currency types in wallet
 	int inWallet(Currency*);	  //checks if currency type is in wallet
 	bool isEmpty();		          //checks if wallet is empty
 	void add(Currency*);           //adds currency

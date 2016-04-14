@@ -1,4 +1,4 @@
-﻿Build started 4/14/2016 1:39:28 AM.
+﻿Build started 4/14/2016 10:26:29 AM.
      1>Project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Lab1.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "14.0".
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Lab1.vcxproj" (entry point):
@@ -241,14 +241,14 @@
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\CURRENCY.OBJ
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ
          	C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\WALLET.OBJ
-         main.cpp will be compiled as C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\main.cpp was modified at 4/14/2016 1:39:28 AM.
+         main.cpp will be compiled as C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\main.cpp was modified at 4/14/2016 10:26:24 AM.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1692
+           VS_UNICODE_OUTPUT=1416
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Debug\Lab1.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\MAIN.CPP" /b MSBuildConsole_CancelEventcfd276e80d0b4748910f9d12cd8045bd  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Debug\Lab1.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\MAIN.CPP" /b MSBuildConsole_CancelEvent9420a9dc5a274219badba45ee36505c6  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe"  /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>c:\users\anya\documents\visual studio 2015\projects\lab1\lab1\main.cpp(17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\anya\documents\visual studio 2015\projects\lab1\lab1\main.cpp(23): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
        Done executing task "CL".
      1>Done building target "ClCompile" in project "Lab1.vcxproj".
        Target "ManagedIncrementalBuildPostProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('Currency.cpp;main.cpp;Wallet.cpp' != '' and 'false' == 'True').
@@ -393,14 +393,17 @@
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\LIB\OLDNAMES.LIB
          	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\LIB\VCRUNTIMED.LIB
          	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.10240.0\UCRT\X86\UCRTD.LIB
-         Source compilation required: input C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ is newer than output C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\DEBUG\LAB1.PDB.
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\BIN\LINK.EXE
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\8.1\BIN\X86\RC.EXE
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\VC\BIN\CVTRES.EXE
+         Source compilation required: input C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ is newer than output C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\DEBUG\LAB1.EXE.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1672
+           VS_UNICODE_OUTPUT=1164
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.lib" /MACHINE:X86 Debug\Currency.obj
          Debug\main.obj
          Debug\Wallet.obj
          Tracking command:
-         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Debug\Lab1.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\CURRENCY.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\WALLET.OBJ" /b MSBuildConsole_CancelEvent6c12c41f81b64d168ea5f4dc8719a753  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.lib" /MACHINE:X86 Debug\Currency.obj
+         C:\Program Files (x86)\MSBuild\14.0\bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\14.0\bin\FileTracker.dll" /i "C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Lab1\Debug\Lab1.tlog" /r "C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\CURRENCY.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\MAIN.OBJ|C:\USERS\ANYA\DOCUMENTS\VISUAL STUDIO 2015\PROJECTS\LAB1\LAB1\DEBUG\WALLET.OBJ" /b MSBuildConsole_CancelEvent0497a557a7024330bc73bb1ddd477dd7  /c "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Anya\Documents\Visual Studio 2015\Projects\Lab1\Debug\Lab1.lib" /MACHINE:X86 Debug\Currency.obj
          Debug\main.obj
          Debug\Wallet.obj
        Done executing task "Link".
@@ -538,4 +541,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.24
+Time Elapsed 00:00:03.06
