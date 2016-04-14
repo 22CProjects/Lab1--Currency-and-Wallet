@@ -63,17 +63,27 @@ Currency& Currency::operator-(Currency& cur)
 {
 	if (this->getName() == cur.getName())
 	{
-		if (this->fraction - cur.fraction < 0)
-		{
-			this->whole--;
-			this->fraction += (100 + this->fraction) - cur.fraction;
-		}
-		if (this->whole < 0 && this->fraction < 0)//since you cannot have negative a negative amount of currency,
+		if (this->whole - cur.whole < 0 )//since you cannot have negative a negative amount of currency,
 		{										  //if the subtraction leads to a negative amount, set to zero
 			this->whole = 0;
 			this->fraction = 0;
 			cout << "there is no currency of this type left";
 		}
+
+		else
+		{
+			if (this->fraction - cur.fraction < 0)
+			{
+				this->whole--;
+				this->fraction = (100 + this->fraction) - cur.fraction;
+			}
+			else
+			{
+				this->fraction -= cur.fraction;
+				this->whole -= cur.whole;
+			}
+		}
+
 	}
 	else
 	{

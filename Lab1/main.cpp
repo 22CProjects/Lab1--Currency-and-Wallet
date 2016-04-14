@@ -13,12 +13,14 @@ int main()
 {
 	Wallet wallet;
 	
-	Currency* dollar = new Dollar();
+	Currency* dollar = new Dollar(1,25);
 	Currency* euro = new Euro();
 	
 	wallet.add(euro);
 	wallet.add(dollar);
-	
+	wallet.add(dollar);
+	wallet.add(dollar);
+	wallet.subtract(dollar);
 	wallet.emptyWallet();
 
 	wallet.add(dollar);

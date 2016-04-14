@@ -36,10 +36,16 @@ bool Wallet::isEmpty()
 
 void Wallet::add(Currency* cur)
 {
+	Currency* temp = top;
 	int pos = inWallet(cur->getName());
 	if (pos != -1)
 	{
-		//do
+		for (int i = 0; i != pos; i++)
+		{
+			temp = temp->get_nextCurrency();
+		}
+		*temp + *cur;
+		cout << *temp<<endl;
 	}
 	else
 	{
@@ -60,10 +66,16 @@ void Wallet::add(Currency* cur)
 
 void Wallet::subtract(Currency* cur)
 {
+	Currency* temp = top;
 	int pos = inWallet(cur->getName());
 	if (pos != -1)
 	{
-		//do 
+		for (int i = 0; i != pos; i++)
+		{
+			temp = temp->get_nextCurrency();
+		}
+		*temp - *cur;
+		cout << *temp << endl;
 	}
 	else
 	{
